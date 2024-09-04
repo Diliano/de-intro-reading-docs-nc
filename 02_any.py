@@ -2,7 +2,7 @@ from test_api.checks import run_test, skip_test, format_err_msg
 
 
 def is_suspicious(crew_mates):
-    pass
+    return any(crew_mate == "imposter" for crew_mate in crew_mates)
 
 
 @run_test
@@ -19,7 +19,7 @@ def test_is_not_suspicious():
         format_err_msg(False, is_suspicious(test_group))
 
 
-@skip_test
+@run_test
 def test_is_suspicious():
     assert is_suspicious(["imposter"]) is True, \
         format_err_msg(True, is_suspicious(["imposter"]))
