@@ -1,8 +1,9 @@
 from test_api.checks import run_test, format_err_msg
+import decimal
 
 
 def add_decimals(fractions_to_add):
-    pass
+    return str(sum(decimal.Decimal(fraction) for fraction in fractions_to_add))
 
 
 @run_test
