@@ -1,3 +1,5 @@
-# Reading Documentation
+# Data Engineering Bootcamp - Reading Documentation
 
-Instructions for this repo can be found at: https://l2c.northcoders.com/courses/de2-intro/docs-reading
+## Overview
+
+This repository contains work completed as part of the Reading Documentation Sprint during my Data Engineering Bootcamp. 
